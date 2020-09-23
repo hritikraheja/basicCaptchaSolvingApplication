@@ -12,10 +12,10 @@
     <string name="solve_the_given_captcha_code">Solve The Given Captcha Code :</string>
     <string name="select_level_1">SELECT LEVEL :</string>
     <string name="choose_level" />
-    <string name="back"><![CDATA[<-- BACK]]></string>
+    <string name="back"><![CDATA[<— BACK]]></string>
     <string name="_1_10_points_will_be_added_for_every_correct_answer">1. 10 Points Will Be Added For Every Correct Answer.</string>
     <string name="_2_10_points_will_be_deducted_for_every_wrong_answer">2. 10 Points Will Be Deducted For Every Wrong Answer.</string>
     <string name="_3_5_points_will_be_deducted_for_every_refresh">3. 5 Points Will Be Deducted For Every Refresh.</string>
-    <string name="info"><![CDATA[INFO -->]]></string>
+    <string name="info"><![CDATA[INFO —>]]></string>
     <string name="bacK"><![CDATA[<--------]]></string>
 </resources>
