@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firstTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="@string/solve_the_given_captcha_code"
+        android:textSize="24sp"
+        app:fontFamily="serif"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/captchaText"
+        android:layout_width="189dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/eafg67"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstTextView" />
+
+    <EditText
+        android:id="@+id/solution"
+        android:layout_width="275dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/write_the_above_code_here"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captchaText" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="137dp"
+        android:layout_height="47dp"
+        android:onClick="refreshCaptcha"
+        android:text="@string/refresh_5"
+        app:layout_constraintBottom_toTopOf="@+id/pointsText"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/solution"
+        app:layout_constraintVertical_bias="0.628" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="135dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:onClick="submitCaptcha"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toTopOf="@+id/pointsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/solution"
+        app:layout_constraintVertical_bias="0.621" />
+
+    <TextView
+        android:id="@+id/pointsText"
+        android:layout_width="181dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/_0_points"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:onClick="goToFirstScreen"
+        android:text="@string/back"
+        app:layout_constraintBottom_toTopOf="@+id/firstTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <Button
+        android:id="@+id/infoButttun"
+        android:layout_width="153dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="76dp"
+        android:onClick="goToThirdScreen"
+        android:text="@string/info"
+        app:layout_constraintBottom_toTopOf="@+id/firstTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

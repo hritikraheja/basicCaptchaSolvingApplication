@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <Button
+        android:id="@+id/backFromRefresh"
+        android:layout_width="153dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="96dp"
+        android:onClick="goToSecondScreen"
+        android:text="@string/bacK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstInfo"
+        android:layout_width="276dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/_1_10_points_will_be_added_for_every_correct_answer"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backFromRefresh" />
+
+    <TextView
+        android:id="@+id/secondInfo"
+        android:layout_width="266dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/_2_10_points_will_be_deducted_for_every_wrong_answer"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstInfo" />
+
+    <TextView
+        android:id="@+id/thirdinfo"
+        android:layout_width="274dp"
+        android:layout_height="63dp"
+        android:text="@string/_3_5_points_will_be_deducted_for_every_refresh"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondInfo"
+        app:layout_constraintVertical_bias="0.282" />
+</androidx.constraintlayout.widget.ConstraintLayout>
